@@ -1,6 +1,15 @@
+import React from 'react';
+import Navbar from './navbar/Navbar';
+import Banner from './banner/Banner';
+import Menu from './menu/Menu';
+
 const App = () => {
   return (
-    <div>CONTENT</div>
+    <React.Fragment>
+      <Navbar />
+      <Banner />
+      <Menu />
+    </React.Fragment>
   );
 }
 

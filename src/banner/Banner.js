@@ -1,8 +1,11 @@
+import BannerInscription from './BannerInscription';
 import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <div className={styles.banner}>BANNER</div>
+    <div className={styles.banner}>
+      <BannerInscription />
+    </div>
   )
 }
 

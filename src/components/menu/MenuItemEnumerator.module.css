@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 5px;
+}
+
+.amount {
+  display: flex;
+  column-gap: 10px;
+}
+
+.amount-label {
+  font-weight: bold;
+}
+
+.amount-input {
+  width: 2em;
+}
+
+.button-container {
+  text-align: right;
+}

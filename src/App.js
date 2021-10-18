@@ -1,7 +1,7 @@
 import React from 'react';
-import Navbar from './navbar/Navbar';
-import Banner from './banner/Banner';
-import Menu from './menu/Menu';
+import Navbar from './components/navbar/Navbar';
+import Banner from './components/banner/Banner';
+import Menu from './components/menu/Menu';
 
 const App = () => {
   return (

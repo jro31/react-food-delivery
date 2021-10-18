@@ -1,0 +1,29 @@
+.menu-item {
+  border-bottom: 1px solid #F1EFF1;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.last-menu-item {
+  border-bottom: none;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.description {
+  font-style: italic;
+}
+
+.price {
+  font-weight: bold;
+  color: maroon;
+}

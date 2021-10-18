@@ -1,0 +1,13 @@
+.menu-container {
+  background-color: #262526;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  background-color: white;
+  width: 65%;
+  border-radius: 10px;
+  padding: 20px;
+}

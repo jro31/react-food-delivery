@@ -9,7 +9,7 @@ const MenuItemEnumerator = () => {
         <input className={styles['amount-input']} type='number' />
       </div>
       <div className={styles['button-container']}>
-        <Button>+Add</Button>
+        <Button filled={true}>+Add</Button>
       </div>
     </div>
   )

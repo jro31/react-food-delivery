@@ -1,0 +1,84 @@
+.order-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+}
+
+.order-modal {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.order-item {
+  border-bottom: 3px solid maroon;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+
+.order-item-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.item-amounts {
+  display: flex;
+  column-gap: 45px;
+  align-items: center;
+}
+
+.item-price {
+  color: maroon;
+  font-weight: bold;
+}
+
+.item-quantity {
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.order-item-buttons {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  row-gap: 20px;
+}
+
+.footer-amount-container {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.footer-buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 15px;
+}

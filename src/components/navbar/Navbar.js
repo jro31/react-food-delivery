@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <h1>ReactMeals</h1>
-      <CartBadge></CartBadge>
+      <CartBadge />
     </div>
   )
 }

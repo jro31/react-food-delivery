@@ -1,8 +1,39 @@
 .button {
-  background-color: maroon;
-  color: white;
-  border-radius: 15px;
-  padding: 5px 25px;
-  border: none;
   font-weight: bold;
+  border: 1px solid maroon;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.filled {
+  color: white;
+  background-color: maroon;
+}
+
+.outlined {
+  color: maroon;
+  background-color: white;
+}
+
+.outlined:hover {
+  color: white;
+  background-color: maroon;
+}
+
+.squared {
+  border-radius: 5px;
+}
+
+.rounded {
+  border-radius: 15px;
+}
+
+.thick {
+  padding: 10px 35px;
+}
+
+.small {
+  padding: 5px 25px;
 }

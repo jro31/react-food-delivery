@@ -7,7 +7,7 @@ const Button = (props) => {
       ${props.filled ? styles.filled : styles.outlined}
       ${props.squared ? styles.squared : styles.rounded}
       ${props.thick ? styles.thick : styles.small}
-    `}>
+    `} onClick={props.onClick}>
       {props.children}
     </button>
   )

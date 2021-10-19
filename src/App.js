@@ -1,44 +1,27 @@
-import { Fragment } from 'react';
+import { useState } from 'react';
 import Navbar from './components/navbar/Navbar';
 import Banner from './components/banner/Banner';
 import Menu from './components/menu/Menu';
 import OrderModal from './components/orderModal/OrderModal';
+import DummyMeals from './components/data/dummy-meals';
+import Cart from './store/cart';
 
-const DUMMY_MEALS = [
-  {
-    id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
-    price: 22.99,
-  },
-  {
-    id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
-    price: 16.5,
-  },
-  {
-    id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
-    price: 12.99,
-  },
-  {
-    id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
-    price: 18.99,
-  },
-];
+const initialCart = () => DummyMeals.map((meal) => ({id: meal.id, quantity: 0}));
 
 const App = () => {
+  const [cartItems, setCartItems] = useState(initialCart());
+
+  const editCartHandler = (mealId, change) => {
+    setCartItems((prevState) => prevState.map(cartItem => (cartItem.id === mealId ? {...cartItem, quantity: cartItem.quantity += change} : cartItem)));
+  };
+
   return (
-    <Fragment>
+    <Cart.Provider value={{ cartItems: cartItems, onChange: editCartHandler }}>
       <Navbar />
       <Banner />
-      <Menu menuItems={DUMMY_MEALS} />
+      <Menu />
       {false && <OrderModal />}
-    </Fragment>
+    </Cart.Provider>
   );
 }
 

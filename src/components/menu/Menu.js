@@ -1,17 +1,20 @@
 import MenuItem from './MenuItem';
 import styles from './Menu.module.css';
+import DummyMeals from '../data/dummy-meals';
 
-const Menu = (props) => {
+const Menu = () => {
   return (
     <div className={styles['menu-container']}>
       <div className={styles.menu}>
-        {props.menuItems.map(meal => {
+        {DummyMeals.map(meal => {
           return (
             <MenuItem
+              key={meal.id}
+              id={meal.id}
               name={meal.name}
               description={meal.description}
               price={meal.price}
-              lastItem={meal === props.menuItems.at(-1)}
+              lastItem={meal === DummyMeals.at(-1)}
             />
           )
         })}
